@@ -1,0 +1,9 @@
+<h1>ブログ一覧</h1>
+
+<ul>
+  <% @blogs.each do |blog| %>
+    <li><%= blog.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'ブログ新規投稿', blogs_new_path %>
